@@ -243,6 +243,7 @@ svg {
 
 .backdrop {
   position: fixed;
+  visibility: visible;
   top: 0;
   left: 0;
 
@@ -251,7 +252,8 @@ svg {
 
   background-color: var(--backdrop-bgc);
   opacity: 1;
-  transition: opacity var(--hover-time) var(--timing-function);
+  transition: opacity var(--hover-time) var(--timing-function),
+    visibility var(--hover-time) var(--timing-function);
 }
 
 .backdrop.is-hidden {
